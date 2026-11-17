@@ -1,86 +1,101 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500">
   <defs>
-    <!-- Background gradient -->
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050810"/>
-      <stop offset="40%" stop-color="#064E3B" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#020408"/>
+    <linearGradient id="cbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#021412"/>
+      <stop offset="50%" stop-color="#062e26"/>
+      <stop offset="100%" stop-color="#010a09"/>
     </linearGradient>
-    <!-- Logo glow -->
-    <radialGradient id="lglow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#6EE7B7" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#6EE7B7" stop-opacity="0"/>
-    </radialGradient>
-    <!-- Right glow -->
-    <radialGradient id="rglow" cx="80%" cy="50%" r="40%">
-      <stop offset="0%" stop-color="#0D9488" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#0D9488" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="gblur"><feGaussianBlur stdDeviation="20"/></filter>
-    <filter id="sblur"><feGaussianBlur stdDeviation="6"/></filter>
+    <linearGradient id="caccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="50%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#6ee7b7"/>
+    </linearGradient>
+    <filter id="cglow"><feGaussianBlur stdDeviation="7" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="1500" height="500" fill="url(#bg)"/>
-  <rect width="1500" height="500" fill="url(#rglow)"/>
+  <!-- Canvas Base -->
+  <rect width="1500" height="500" fill="url(#cbg)"/>
 
-  <!-- Star field (subtle dots) -->
-  <g opacity="0.4" fill="white">
-    <circle cx="200" cy="80" r="1"/><circle cx="400" cy="40" r="1.5"/>
-    <circle cx="650" cy="90" r="1"/><circle cx="900" cy="30" r="1.5"/>
-    <circle cx="1100" cy="70" r="1"/><circle cx="1300" cy="50" r="1.5"/>
-    <circle cx="1400" cy="110" r="1"/><circle cx="750" cy="470" r="1.5"/>
-    <circle cx="300" cy="420" r="1"/><circle cx="1200" cy="430" r="1"/>
-    <circle cx="100" cy="300" r="1.5"/><circle cx="1450" cy="280" r="1"/>
-    <circle cx="500" cy="460" r="1"/><circle cx="850" cy="20" r="1"/>
+  <!-- Geometric Hex Constellation Grid -->
+  <g opacity="0.15" stroke="#10b981" stroke-width="1" fill="none">
+    <polygon points="100,50 150,80 150,140 100,170 50,140 50,80"/>
+    <polygon points="150,80 200,110 200,170 150,200 100,170 100,110"/>
+    <polygon points="1200,300 1250,330 1250,390 1200,420 1150,390 1150,330"/>
+    <polygon points="1250,330 1300,360 1300,420 1250,450 1200,420 1200,360"/>
   </g>
 
-  <!-- Left glow blob for logo -->
-  <ellipse cx="230" cy="250" rx="180" ry="180" fill="url(#lglow)" filter="url(#gblur)"/>
+  <!-- Left: Neural Knowledge Core & Synaptic Links -->
+  <g transform="translate(190, 250)">
+    <!-- Orbiting Energy Ring -->
+    <ellipse cx="0" cy="0" rx="135" ry="50" fill="none" stroke="#0d9488" stroke-width="2" transform="rotate(-30)" stroke-dasharray="10 6" opacity="0.7"/>
+    <ellipse cx="0" cy="0" rx="135" ry="50" fill="none" stroke="#34d399" stroke-width="2" transform="rotate(30)" stroke-dasharray="10 6" opacity="0.7"/>
 
-  <!-- Logo circle -->
-  <circle cx="230" cy="250" r="150" fill="#050810" opacity="0.7"/>
-  <circle cx="230" cy="250" r="148" fill="none" stroke="#34D399" stroke-width="2" opacity="0.5"/>
-  <circle cx="230" cy="250" r="130" fill="none" stroke="#0D9488" stroke-width="1" opacity="0.3"/>
-  <!-- Logo gradient fill -->
-  <defs>
-    <radialGradient id="lgfill" cx="40%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#0D9488" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#064E3B" stop-opacity="0.95"/>
-    </radialGradient>
-  </defs>
-  <circle cx="230" cy="250" r="128" fill="url(#lgfill)"/>
-  <!-- Initials -->
-  <text x="230" y="275" font-family="'Segoe UI', Arial, sans-serif"
-        font-size="72" font-weight="900" fill="white"
-        text-anchor="middle" letter-spacing="4">CX</text>
-  <line x1="175" y1="300" x2="285" y2="300" stroke="#34D399" stroke-width="2" opacity="0.6"/>
+    <!-- Central Knowledge Orb -->
+    <circle cx="0" cy="0" r="48" fill="#04201a" stroke="url(#caccent)" stroke-width="3.5" filter="url(#cglow)"/>
+    
+    <!-- Brain / Neural Nodes around orb -->
+    <g stroke="#34d399" stroke-width="2">
+      <line x1="0" y1="0" x2="-65" y2="-65"/>
+      <line x1="0" y1="0" x2="65" y2="-65"/>
+      <line x1="0" y1="0" x2="-75" y2="40"/>
+      <line x1="0" y1="0" x2="75" y2="40"/>
+      <line x1="0" y1="0" x2="0" y2="85"/>
+      <line x1="0" y1="0" x2="0" y2="-85"/>
+    </g>
 
-  <!-- Vertical divider -->
-  <line x1="430" y1="80" x2="430" y2="420" stroke="#34D399" stroke-width="1" opacity="0.25"/>
+    <circle cx="-65" cy="-65" r="14" fill="#0d9488" filter="url(#cglow)"/>
+    <circle cx="65" cy="-65" r="14" fill="#10b981" filter="url(#cglow)"/>
+    <circle cx="-75" cy="40" r="12" fill="#34d399" filter="url(#cglow)"/>
+    <circle cx="75" cy="40" r="12" fill="#0d9488" filter="url(#cglow)"/>
+    <circle cx="0" cy="85" r="16" fill="#10b981" filter="url(#cglow)"/>
+    <circle cx="0" cy="-85" r="16" fill="#6ee7b7" filter="url(#cglow)"/>
 
-  <!-- Project Name -->
-  <text x="490" y="200" font-family="'Segoe UI', Arial, sans-serif"
-        font-size="80" font-weight="900" fill="white" letter-spacing="2">COGNIX NEXUS</text>
-  <!-- Accent underline -->
-  <rect x="490" y="220" width="500" height="3" rx="2" fill="#0D9488" opacity="0.8"/>
-  <rect x="490" y="220" width="150" height="3" rx="2" fill="#34D399"/>
+    <text x="0" y="7" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle">OS</text>
+  </g>
 
-  <!-- Tagline -->
-  <text x="490" y="290" font-family="'Segoe UI', Arial, sans-serif"
-        font-size="36" font-weight="400" fill="#34D399" letter-spacing="1" opacity="0.95">Connected Intelligence Platform</text>
+  <!-- Right: Knowledge Graph Network Cluster -->
+  <g transform="translate(1080, 160)" opacity="0.75">
+    <line x1="40" y1="40" x2="140" y2="90" stroke="#0d9488" stroke-width="2"/>
+    <line x1="140" y1="90" x2="240" y2="40" stroke="#10b981" stroke-width="2"/>
+    <line x1="140" y1="90" x2="100" y2="180" stroke="#34d399" stroke-width="2"/>
+    <line x1="100" y1="180" x2="200" y2="190" stroke="#0d9488" stroke-width="2"/>
+    <line x1="240" y1="40" x2="200" y2="190" stroke="#6ee7b7" stroke-width="2"/>
 
-  <!-- Sub tags -->
-  <text x="490" y="345" font-family="'Segoe UI', Arial, sans-serif"
-        font-size="22" font-weight="300" fill="white" opacity="0.45">Knowledge · Research · RAG · AI Recall</text>
+    <circle cx="40" cy="40" r="16" fill="#062e26" stroke="#0d9488" stroke-width="2"/>
+    <circle cx="140" cy="90" r="22" fill="#062e26" stroke="#34d399" stroke-width="2.5" filter="url(#cglow)"/>
+    <circle cx="240" cy="40" r="14" fill="#062e26" stroke="#10b981" stroke-width="2"/>
+    <circle cx="100" cy="180" r="18" fill="#062e26" stroke="#6ee7b7" stroke-width="2"/>
+    <circle cx="200" cy="190" r="15" fill="#062e26" stroke="#0d9488" stroke-width="2"/>
+    
+    <text x="140" y="95" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="800" fill="#6ee7b7" text-anchor="middle">RAG</text>
+  </g>
 
-  <!-- Bottom accent line full width -->
-  <rect x="0" y="490" width="1500" height="4" rx="0" fill="#0D9488" opacity="0.6"/>
-  <rect x="0" y="490" width="300" height="4" fill="#34D399" opacity="0.9"/>
+  <!-- Typography & Badges -->
+  <g transform="translate(390, 160)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="280" height="30" rx="15" fill="#063d33" stroke="#0d9488" stroke-width="1.5"/>
+    <circle cx="16" cy="15" r="5" fill="#34d399"/>
+    <text x="32" y="20" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#6ee7b7" letter-spacing="2">CONNECTED INTELLIGENCE OS</text>
 
-  <!-- Right side: decorative rings -->
-  <circle cx="1300" cy="250" r="120" fill="none" stroke="#0D9488" stroke-width="1" opacity="0.15"/>
-  <circle cx="1300" cy="250" r="80" fill="none" stroke="#34D399" stroke-width="1" opacity="0.1"/>
-  <circle cx="1300" cy="250" r="40" fill="#0D9488" opacity="0.08"/>
-  <circle cx="1300" cy="250" r="12" fill="#0D9488" opacity="0.3"/>
+    <!-- Main Title -->
+    <text x="0" y="85" font-family="'Segoe UI', 'Arial Black', sans-serif" font-size="64" font-weight="900" fill="#ffffff" letter-spacing="4">COGNIX NEXUS</text>
+    
+    <!-- Accent Line -->
+    <rect x="0" y="105" width="620" height="4" rx="2" fill="url(#caccent)"/>
+
+    <!-- Tagline -->
+    <text x="0" y="150" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="500" fill="#94a3b8" letter-spacing="1">Evidence-Aware Knowledge OS · Graph Retrieval · Active Recall</text>
+    
+    <!-- Sub-pills -->
+    <g transform="translate(0, 185)" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">
+      <rect x="0" y="0" width="150" height="28" rx="6" fill="#04231d" stroke="#0d9488" stroke-width="1"/>
+      <text x="75" y="18" fill="#a7f3d0" text-anchor="middle">KNOWLEDGE GRAPH</text>
+      <rect x="165" y="0" width="150" height="28" rx="6" fill="#04231d" stroke="#0d9488" stroke-width="1"/>
+      <text x="240" y="18" fill="#a7f3d0" text-anchor="middle">HYBRID RETRIEVAL</text>
+      <rect x="330" y="0" width="140" height="28" rx="6" fill="#04231d" stroke="#0d9488" stroke-width="1"/>
+      <text x="400" y="18" fill="#a7f3d0" text-anchor="middle">QDRANT VECTOR</text>
+      <rect x="485" y="0" width="140" height="28" rx="6" fill="#04231d" stroke="#0d9488" stroke-width="1"/>
+      <text x="555" y="18" fill="#a7f3d0" text-anchor="middle">ACTIVE RECALL</text>
+    </g>
+  </g>
 </svg>
