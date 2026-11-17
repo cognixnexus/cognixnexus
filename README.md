@@ -10,7 +10,12 @@
   &nbsp;·&nbsp;
   <a href="https://cognix-nexus.vercel.app">Open web app</a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/cognixnexus/Cognix-Nexus/issues">Report an issue</a>
+  <a href="https://github.com/cognixnexus/Cognix-Nexus/issues">Issues & feedback</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/cognixnexus/Cognix-Nexus/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/cognixnexus/Cognix-Nexus/actions/workflows/ci.yml/badge.svg?branch=main"/></a>
+  <a href="https://github.com/cognixnexus/Cognix-Nexus/actions/workflows/codeql.yml"><img alt="CodeQL" src="https://github.com/cognixnexus/Cognix-Nexus/actions/workflows/codeql.yml/badge.svg?branch=main"/></a>
 </p>
 
 ---
@@ -41,16 +46,17 @@ The goal is not another place to collect links. It is a system that helps transf
 </p>
 
 - **Application:** [Cognix Nexus Web](https://cognix-nexus.vercel.app)
-- **Backend endpoint:** [Cognix Core API](https://cognix-core-ypak.onrender.com)
+- **Backend API:** [Cognix Core API](https://cognix-core-ypak.onrender.com)
 - **Source code:** [github.com/cognixnexus/Cognix-Nexus](https://github.com/cognixnexus/Cognix-Nexus)
-- **Feedback:** [Issues and feature requests](https://github.com/cognixnexus/Cognix-Nexus/issues)
+- **Architecture:** [System overview](https://github.com/cognixnexus/Cognix-Nexus/blob/main/docs/ARCHITECTURE.md)
+- **Security:** [Security policy](https://github.com/cognixnexus/Cognix-Nexus/blob/main/SECURITY.md)
 
 ## Engineering principles
 
-- **Evidence before certainty** — extracted information should retain its source context.
+- **Evidence before certainty** — preserve where information came from.
 - **Human review matters** — generated claims are not automatically verified facts.
 - **Connected, not complicated** — structure should make knowledge easier to use.
-- **Privacy-conscious by design** — secrets and private data do not belong in source control.
+- **Privacy-conscious engineering** — keep credentials out of source control and handle integrations deliberately.
 - **Useful intelligence** — prioritize workflows that improve understanding, recall, and action.
 
 ---
