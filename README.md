@@ -16,6 +16,7 @@
 <p align="center">
   <a href="https://github.com/cognixnexus/Cognix-Nexus/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/cognixnexus/Cognix-Nexus/actions/workflows/ci.yml/badge.svg?branch=main"/></a>
   <a href="https://github.com/cognixnexus/Cognix-Nexus/actions/workflows/codeql.yml"><img alt="CodeQL" src="https://github.com/cognixnexus/Cognix-Nexus/actions/workflows/codeql.yml/badge.svg?branch=main"/></a>
+  <a href="https://github.com/cognixnexus/Cognix-Nexus/actions/workflows/production-ci.yml"><img alt="Production checks" src="https://github.com/cognixnexus/Cognix-Nexus/actions/workflows/production-ci.yml/badge.svg?branch=main"/></a>
 </p>
 
 ---
