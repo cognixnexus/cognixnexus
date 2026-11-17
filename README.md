@@ -1,67 +1,35 @@
-![Cognix Core — Connected Intelligence](https://raw.githubusercontent.com/cognixnexus/cognixnexus/main/assets/cognix-core-banner.svg)
-
 <p align="center">
-  <strong>Building a more useful, connected personal knowledge system.</strong><br/>
-  Research intelligence · Knowledge graphs · AI-assisted recall
+  <img src="https://raw.githubusercontent.com/cognixnexus/cognixnexus/main/assets/banner.svg" alt="Cognix Nexus — Connected Intelligence Platform" width="100%" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/cognixnexus/Cognix-Nexus">Explore the platform</a>
-  &nbsp;·&nbsp;
-  <a href="https://cognix-nexus.vercel.app">Open web app</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/cognixnexus/Cognix-Nexus/issues">Issues & feedback</a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/cognixnexus/Cognix-Nexus/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/cognixnexus/Cognix-Nexus/actions/workflows/ci.yml/badge.svg?branch=main"/></a>
-  <a href="https://github.com/cognixnexus/Cognix-Nexus/actions/workflows/codeql.yml"><img alt="CodeQL" src="https://github.com/cognixnexus/Cognix-Nexus/actions/workflows/codeql.yml/badge.svg?branch=main"/></a>
-  <a href="https://github.com/cognixnexus/Cognix-Nexus/actions/workflows/production-ci.yml"><img alt="Production checks" src="https://github.com/cognixnexus/Cognix-Nexus/actions/workflows/production-ci.yml/badge.svg?branch=main"/></a>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/Qdrant-DC244C?style=flat-square&logo=qdrant&logoColor=white" alt="Qdrant" />
+  <img src="https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/LLM-FF6B6B?style=flat-square&logo=llm&logoColor=white" alt="LLM" />
+  <img src="https://img.shields.io/badge/AI-7C3AED?style=flat-square&logo=ai&logoColor=white" alt="AI" />
+  
 </p>
 
 ---
 
-## The Cognix vision
-
-**Cognix Core** is the broader vision: an intelligence layer for capturing information, preserving its evidence, connecting ideas, and making useful knowledge retrievable.
-
-**Cognix Nexus** is the platform being built around that vision.
-
-The goal is not another place to collect links. It is a system that helps transform scattered information into knowledge that can be explored, checked, connected, and remembered.
-
-## What we're building
-
-| Focus | Direction |
-|---|---|
-| Research capture | Bring material from documents, web sources, audio, and connected channels into one workflow |
-| Evidence-aware knowledge | Keep claims connected to their sources and review state |
-| Connected thinking | Explore relationships between concepts and references |
-| Contextual retrieval | Find relevant knowledge through semantic and structured context |
-| Active recall | Support learning with flashcards and spaced repetition |
-| Multi-surface access | Build web, mobile, and messaging-oriented experiences |
-
-## Product & code
-
 <p align="center">
-  <a href="https://github.com/cognixnexus/Cognix-Nexus"><strong>COGNIX NEXUS — MAIN REPOSITORY</strong></a>
+  <strong>An evidence-aware personal knowledge OS for research, connected ideas, hybrid retrieval, and AI-assisted active recall.</strong>
 </p>
 
-- **Application:** [Cognix Nexus Web](https://cognix-nexus.vercel.app)
-- **Backend API:** [Cognix Core API](https://cognix-core-ypak.onrender.com)
-- **Source code:** [github.com/cognixnexus/Cognix-Nexus](https://github.com/cognixnexus/Cognix-Nexus)
-- **Architecture:** [System overview](https://github.com/cognixnexus/Cognix-Nexus/blob/main/docs/ARCHITECTURE.md)
-- **Security:** [Security policy](https://github.com/cognixnexus/Cognix-Nexus/blob/main/SECURITY.md)
-
-## Engineering principles
-
-- **Evidence before certainty** — preserve where information came from.
-- **Human review matters** — generated claims are not automatically verified facts.
-- **Connected, not complicated** — structure should make knowledge easier to use.
-- **Privacy-conscious engineering** — keep credentials out of source control and handle integrations deliberately.
-- **Useful intelligence** — prioritize workflows that improve understanding, recall, and action.
+<p align="center">
+  knowledge graphs · research · RAG · AI recall
+</p>
 
 ---
 
 <p align="center">
-  <sub>COGNIX CORE · CONNECTED INTELLIGENCE · BUILT ITERATIVELY</sub>
+  <a href="https://cognix-nexus-frontend.onrender.com">
+    <img src="https://img.shields.io/badge/Website-Live-0D9488?style=for-the-badge" alt="Website" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/cognixnexus/Cognix-Nexus">
+    <img src="https://img.shields.io/badge/Repository-GitHub-181717?style=for-the-badge&logo=github" alt="Repository" />
+  </a>
 </p>
